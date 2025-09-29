@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HelloWorld_TkachMyroslav</string>
+    <string name="change_text">Change Text</string>
 </resources>
