@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+
+        //just some text
     }
 
     public void ChangeText(View view) {
