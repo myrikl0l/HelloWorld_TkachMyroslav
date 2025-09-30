@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/DemoLabel"
         android:layout_width="234dp"
@@ -40,5 +41,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ChangeTextClick" />
+
+    <Button
+        android:id="@+id/changeBackColorClick"
+        android:layout_width="241dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="60dp"
+        android:text="Change Background Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeColorTextClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
