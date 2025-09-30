@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //just some text
+
+        //Code for revert
     }
 
     public void ChangeText(View view) {
