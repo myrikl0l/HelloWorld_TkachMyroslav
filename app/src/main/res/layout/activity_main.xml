@@ -9,24 +9,36 @@
 
     <TextView
         android:id="@+id/DemoLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="234dp"
+        android:layout_height="25dp"
         android:text="Hello World!"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.134" />
 
     <Button
         android:id="@+id/ChangeTextClick"
         android:layout_width="241dp"
         android:layout_height="121dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:onClick="ChangeText"
         android:text="@string/change_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DemoLabel" />
+
+    <Button
+        android:id="@+id/changeColorTextClick"
+        android:layout_width="241dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="60dp"
+        android:onClick="ChangeColor"
+        android:text="Change Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChangeTextClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

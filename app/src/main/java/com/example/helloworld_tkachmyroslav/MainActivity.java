@@ -1,7 +1,9 @@
 package com.example.helloworld_tkachmyroslav;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    TextView DemoLabel; // - global variable
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +25,28 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        this.DemoLabel = findViewById(R.id.DemoLabel);
+        Button changeColor = findViewById(R.id.changeColorTextClick);
+
+        changeColor.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+               DemoLabel.setBackgroundColor(Color.RED);
+            }
+
+
+        });
     }
 
     public void ChangeText(View view) {
-        TextView DemoLabel =findViewById(R.id.DemoLabel);
+        //TextView DemoLabel =findViewById(R.id.DemoLabel);
         DemoLabel.setText("Hello! (Text was Changed)");
+    }
+
+
+
+
+    public void ChangeColor(View view) {
+
     }
 }
