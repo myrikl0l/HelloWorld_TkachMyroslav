@@ -27,11 +27,18 @@ public class MainActivity extends AppCompatActivity {
         });
         this.DemoLabel = findViewById(R.id.DemoLabel);
         Button changeColor = findViewById(R.id.changeColorTextClick);
+        Button changeBackColor = findViewById(R.id.changeBackColorClick);
 
         changeColor.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-               DemoLabel.setBackgroundColor(Color.RED);
+            public void onClick(View v) {
+                DemoLabel.setTextColor(Color.BLUE);
+            }
+
+
+        });
+        changeBackColor.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                DemoLabel.setBackgroundColor(Color.RED);
             }
 
 
